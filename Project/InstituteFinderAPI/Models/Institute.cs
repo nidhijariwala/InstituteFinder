@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-//This class contains all the properties for the institues
+//This class contains all the properties for get the institute name and number of courses
 namespace InstituteFinderAPI.Models
 {
     public class Institute

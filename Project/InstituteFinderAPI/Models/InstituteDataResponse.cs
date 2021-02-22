@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+//This class contains the properties colleges name, number of courses and status of data set for SET API
 namespace InstituteFinderAPI.Models
 {
     public class InstituteDataResponse

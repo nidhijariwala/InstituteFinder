@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+//This class contains the list of properties from Institue class to GET API
 namespace InstituteFinderAPI.Models
 {
     public class InstituteData

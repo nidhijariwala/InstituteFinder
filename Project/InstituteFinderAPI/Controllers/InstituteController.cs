@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
+//This class will get all the list of college name and number of courses
 namespace InstituteFinderAPI.Controllers
 {
     //GET api/Institute List
