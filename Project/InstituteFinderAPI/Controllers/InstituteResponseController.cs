@@ -15,8 +15,16 @@ namespace InstituteFinderAPI.Controllers
         {
              InstituteDataResponse instdataresp = new InstituteDataResponse();
             InstituteData.getInstance().Add(objinst);
-            instdataresp.I_Name = objinst.I_Name;
-            instdataresp.I_Course = objinst.I_Course;
+            instdataresp.C_Name = objinst.C_Name;
+            instdataresp.c_Id = objinst.c_Id;
+            instdataresp.DLI_No = objinst.DLI_No;
+            instdataresp.c_address = objinst.c_address;
+            instdataresp.c_city = objinst.c_city;
+            instdataresp.c_province = objinst.c_province;
+            instdataresp.c_postalcode = objinst.c_province;
+            instdataresp.c_contact = objinst.c_contact;
+            instdataresp.no_courses = objinst.no_courses;
+            instdataresp.no_campus = objinst.no_campus;
             instdataresp.Status = "Sucess";
             return instdataresp;
         }
