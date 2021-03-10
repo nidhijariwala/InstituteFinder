@@ -28,5 +28,21 @@ namespace InstituteFinderAPI.Controllers
             instdataresp.Status = "Sucess";
             return instdataresp;
         }
+
+       /* public CoursesDataResponse CourseList(Courses courseObj)
+        {
+            CoursesDataResponse courseDataResponse = new CoursesDataResponse();
+            CourseData.getInstance().Add(courseObj);
+            courseDataResponse.courseId = courseObj.courseId;
+            courseDataResponse.courseName = courseObj.courseName;
+            courseDataResponse.collegeName = courseObj.collegeName;
+            courseDataResponse.courseLength = courseObj.courseLength;
+            courseDataResponse.noOfLevels = courseObj.noOfLevels;
+            courseDataResponse.campusOffering = courseObj.campusOffering;
+            courseDataResponse.dliNumber = courseObj.dliNumber;
+            courseDataResponse.Status = "Sucess";
+            return courseDataResponse;
+        }
+       */
     }
 }

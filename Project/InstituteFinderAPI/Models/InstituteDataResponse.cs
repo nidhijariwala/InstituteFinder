@@ -9,87 +9,93 @@ namespace InstituteFinderAPI.Models
     public class InstituteDataResponse
     {
         //This prorperty used to store institute name
-        String collegename;
+        String CollegeName;
 
         public String C_Name
         {
-            get { return collegename; }
-            set { collegename = value; }
+            get { return CollegeName; }
+            set { CollegeName = value; }
         }
 
-        //This property is used to store the total number of courses in institute
-        int collegeId;
+        //This property is used to store Institute Id
+        int CollegeID;
 
         public int c_Id
         {
-            get { return collegeId; }
-            set { collegeId = value; }
+            get { return CollegeID; }
+            set { CollegeID = value; }
         }
 
-
-        String DLINo;
+        //This property is used to store Institute DLI number
+        String DLINumber;
 
         public String DLI_No
         {
-            get { return DLINo; }
-            set { DLINo = value; }
+            get { return DLINumber; }
+            set { DLINumber = value; }
         }
 
-
-        String collegeAdress;
+        //This property is used to store Institute Address
+        String Address;
 
         public String c_address
         {
-            get { return collegeAdress; }
-            set { collegeAdress = value; }
+            get { return Address; }
+            set { Address = value; }
         }
 
-        String collegeCity;
+        //This property is used to store Institute City
+        String City;
 
         public String c_city
         {
-            get { return collegeCity; }
-            set { collegeCity = value; }
+            get { return City; }
+            set { City = value; }
         }
 
-        String collegeProvince;
+        //This property is used to store Institute Province
+        String Province;
 
         public String c_province
         {
-            get { return collegeProvince; }
-            set { collegeProvince = value; }
+            get { return Province; }
+            set { Province = value; }
         }
 
-        String collegePostalCode;
+        //This property is used to store Institute Postal Code
+        String PostalCode;
 
         public String c_postalcode
         {
-            get { return collegePostalCode; }
-            set { collegePostalCode = value; }
+            get { return PostalCode; }
+            set { PostalCode = value; }
         }
 
-        String collegeContact;
+        //This property is used to store Institute Contact Details
+        String ContactDetails;
 
         public String c_contact
         {
-            get { return collegeContact; }
-            set { collegeContact = value; }
+            get { return ContactDetails; }
+            set { ContactDetails = value; }
         }
 
-        String noOfCourses;
+        //This property is used to store total number of courses for Institute
+        String NumOfCourses;
 
         public String no_courses
         {
-            get { return noOfCourses; }
-            set { noOfCourses = value; }
+            get { return NumOfCourses; }
+            set { NumOfCourses = value; }
         }
 
-        String noOfCampus;
+        //This property is used to store total number of campuses for Institute
+        String NumOfCampus;
 
         public String no_campus
         {
-            get { return noOfCampus; }
-            set { noOfCampus = value; }
+            get { return NumOfCampus; }
+            set { NumOfCampus = value; }
         }
 
         //This prorperty used to store status of data
@@ -102,6 +108,75 @@ namespace InstituteFinderAPI.Models
         }
 
 
+
+    }
+
+    public class CoursesDataResponse
+    {
+        //This property is used to store Course ID
+        String CourseID;
+        public String courseId
+        {
+            get { return CourseID; }
+            set { CourseID = value; }
+        }
+
+        //This property is used to store Course Name
+        String CourseName;
+        public String courseName
+        {
+            get { return CourseName; }
+            set { CourseName = value; }
+        }
+
+        //This property is used to store Institute Name
+        String CollgeName;
+        public String collegeName
+        {
+            get { return CollgeName; }
+            set { CollgeName = value; }
+        }
+
+        //This property is used to store Course Legnth
+        String CourseLength;
+        public String courseLength
+        {
+            get { return CourseLength; }
+            set { CourseLength = value; }
+        }
+
+        //This property is used to store number of leves for Course
+        String NumOfLevels;
+        public String noOfLevels
+        {
+            get { return NumOfLevels; }
+            set { NumOfLevels = value; }
+        }
+
+        //This property is used to store CampusOffering for Course
+        String CampusOffering;
+        public String campusOffering
+        {
+            get { return CampusOffering; }
+            set { CampusOffering = value; }
+        }
+
+        //This property is used to store Institute DLI number
+        String DLINumber;
+        public String dliNumber
+        {
+            get { return DLINumber; }
+            set { DLINumber = value; }
+        }
+
+        //This prorperty used to store status of data
+        string status;
+
+        public String Status
+        {
+            get { return status; }
+            set { status = value; }
+        }
 
     }
 }
