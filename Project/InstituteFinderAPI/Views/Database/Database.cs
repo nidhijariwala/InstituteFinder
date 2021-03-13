@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Web;
 using static System.Net.Mime.MediaTypeNames;
 
+//This class will connect with database and make call to insert the data in database
 namespace InstituteFinderAPI.Views.Database
 {
     public class Database

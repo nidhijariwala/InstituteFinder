@@ -1,4 +1,5 @@
 ﻿using InstituteFinderAPI.Models;
+using InstituteFinderAPI.Views.Database;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,36 +14,35 @@ namespace InstituteFinderAPI.Controllers
     {
         public InstituteDataResponse AddInstitute(Institute objinst)
         {
-             InstituteDataResponse instdataresp = new InstituteDataResponse();
+            InstituteDataResponse instdataresp = new InstituteDataResponse();
             InstituteData.getInstance().Add(objinst);
             instdataresp.C_Name = objinst.C_Name;
             instdataresp.c_Id = objinst.c_Id;
-            instdataresp.DLI_No = objinst.DLI_No;
             instdataresp.c_address = objinst.c_address;
             instdataresp.c_city = objinst.c_city;
             instdataresp.c_province = objinst.c_province;
-            instdataresp.c_postalcode = objinst.c_province;
+            instdataresp.c_postalcode = objinst.c_postalcode;
             instdataresp.c_contact = objinst.c_contact;
             instdataresp.no_courses = objinst.no_courses;
             instdataresp.no_campus = objinst.no_campus;
+            instdataresp.courseId = objinst.courseId;
+            instdataresp.courseName = objinst.courseName;
+            instdataresp.collegeName = objinst.collegeName;
+            instdataresp.courseLength = objinst.courseLength;
+            instdataresp.noOfLevels = objinst.noOfLevels;
+            instdataresp.campusOffering = objinst.campusOffering;
+            instdataresp.dliNumber = objinst.dliNumber;
             instdataresp.Status = "Sucess";
+            List<Institute> DBList = new List<Institute>();
+            if (instdataresp != null)
+            {
+                DBList.Add(objinst);
+                Database db = new Database();
+                db.connectDB(DBList);
+
+            }
             return instdataresp;
         }
 
-       /* public CoursesDataResponse CourseList(Courses courseObj)
-        {
-            CoursesDataResponse courseDataResponse = new CoursesDataResponse();
-            CourseData.getInstance().Add(courseObj);
-            courseDataResponse.courseId = courseObj.courseId;
-            courseDataResponse.courseName = courseObj.courseName;
-            courseDataResponse.collegeName = courseObj.collegeName;
-            courseDataResponse.courseLength = courseObj.courseLength;
-            courseDataResponse.noOfLevels = courseObj.noOfLevels;
-            courseDataResponse.campusOffering = courseObj.campusOffering;
-            courseDataResponse.dliNumber = courseObj.dliNumber;
-            courseDataResponse.Status = "Sucess";
-            return courseDataResponse;
-        }
-       */
     }
 }

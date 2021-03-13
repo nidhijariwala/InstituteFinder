@@ -78,74 +78,74 @@ namespace InstituteFinderAPI.Models
     }
 
 
-    public class CourseData
-    {
-        List<Courses> CoursesList;
-        static CourseData idata = null;
+    //public class CourseData
+    //{
+    //    List<Courses> CoursesList;
+    //    static CourseData idata = null;
 
 
-        private CourseData()
-        {
-            CoursesList = new List<Courses>();
-        }
+    //    private CourseData()
+    //    {
+    //        CoursesList = new List<Courses>();
+    //    }
 
-        public static CourseData getInstance()
-        {
-            if (idata == null)
-            {
-                idata = new CourseData();
-                return idata;
-            }
-            else
-            {
-                return idata;
-            }
-        }
+    //    public static CourseData getCourseInstance()
+    //    {
+    //        if (idata == null)
+    //        {
+    //            idata = new CourseData();
+    //            return idata;
+    //        }
+    //        else
+    //        {
+    //            return idata;
+    //        }
+    //    }
 
-        public void Add(Courses objei)
-        {
-            CoursesList.Add(objei);
-        }
+    //    public void AddCourse(Courses objei)
+    //    {
+    //        CoursesList.Add(objei);
+    //    }
 
 
 
-        public List<Courses> getAllCoursesData()
-        {
-            return CoursesList;
-        }
+    //    public List<Courses> getAllCoursesData()
+    //    {
+    //        return CoursesList;
+    //    }
 
-        #region Refernce method for update and delete data for Institute
+    //    #region Refernce method for update and delete data for Institute
 
-        //public String Remove(String registrationNumber)
-        //{
-        //    for (int i = 0; i < studentList.Count; i++)
-        //    {
-        //        Student stdn = studentList.ElementAt(i);
-        //        if (stdn.RegistrationNumber.Equals(registrationNumber))
-        //        {
-        //            studentList.RemoveAt(i);//update the new record
-        //            return "Delete successful";
-        //        }
-        //    }
+    //    //public String Remove(String registrationNumber)
+    //    //{
+    //    //    for (int i = 0; i < studentList.Count; i++)
+    //    //    {
+    //    //        Student stdn = studentList.ElementAt(i);
+    //    //        if (stdn.RegistrationNumber.Equals(registrationNumber))
+    //    //        {
+    //    //            studentList.RemoveAt(i);//update the new record
+    //    //            return "Delete successful";
+    //    //        }
+    //    //    }
 
-        //    return "Delete un-successful";
-        //}
+    //    //    return "Delete un-successful";
+    //    //}
 
-        //public String UpdateStudent(Student std)
-        //{
-        //    for (int i = 0; i < studentList.Count; i++)
-        //    {
-        //        Student stdn = studentList.ElementAt(i);
-        //        if (stdn.RegistrationNumber.Equals(std.RegistrationNumber))
-        //        {
-        //            studentList[i] = std;//update the new record
-        //            return "Update successful";
-        //        }
-        //    }
+    //    //public String UpdateStudent(Student std)
+    //    //{
+    //    //    for (int i = 0; i < studentList.Count; i++)
+    //    //    {
+    //    //        Student stdn = studentList.ElementAt(i);
+    //    //        if (stdn.RegistrationNumber.Equals(std.RegistrationNumber))
+    //    //        {
+    //    //            studentList[i] = std;//update the new record
+    //    //            return "Update successful";
+    //    //        }
+    //    //    }
 
-        //    return "Update un-successful";
-        //}
+    //    //    return "Update un-successful";
+    //    //}
 
-        #endregion
-    }
+    //    #endregion
+    //}
 }

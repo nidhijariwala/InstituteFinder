@@ -17,9 +17,5 @@ namespace InstituteFinderAPI.Controllers
             return InstituteData.getInstance().getAllInstituteData();
         }
 
-        //public List<Courses> GetAllCourses()
-        //{
-          //  return CourseData.getInstance().getAllCoursesData();
-        //}
     }
 }

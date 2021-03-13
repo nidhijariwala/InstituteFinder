@@ -26,15 +26,6 @@ namespace InstituteFinderAPI.Models
             set { CollegeID = value; }
         }
 
-        //This property is used to store Institute DLI number
-        String DLINumber;
-
-        public String DLI_No
-        {
-            get { return DLINumber; }
-            set { DLINumber = value; }
-        }
-
         //This property is used to store Institute Address
         String Address;
 
@@ -98,21 +89,6 @@ namespace InstituteFinderAPI.Models
             set { NumOfCampus = value; }
         }
 
-        //This prorperty used to store status of data
-        string status;
-
-        public String Status
-        {
-            get { return status; }
-            set { status = value; }
-        }
-
-
-
-    }
-
-    public class CoursesDataResponse
-    {
         //This property is used to store Course ID
         String CourseID;
         public String courseId
@@ -179,4 +155,5 @@ namespace InstituteFinderAPI.Models
         }
 
     }
+
 }
